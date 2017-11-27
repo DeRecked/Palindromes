@@ -1,10 +1,9 @@
 #include "PalindromeR.hpp"
 
 int PalindromeR::test_string(const string& s)
-{   
+{
     int front = 0;                                              // Points to front of string
-    int end = s.length() - 1;                                   // Poiunts to end of string
-     
+    int end = s.length();										// Poiunts to end of string
     return test_char(s, front, end);                            // Initial call to recursive function
 }
 
